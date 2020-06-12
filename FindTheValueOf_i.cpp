@@ -13,10 +13,9 @@ int main()
    cin >> powerOfI;
    
    // Calculate what i would be
-   int powerDivisibleBy4, remainder;
+   int remainder;
    string iToThe;
-   powerDivisibleBy4 = powerOfI / 4;
-   remainder = powerOfI - (4 * powerDivisibleBy4);
+   remainder = powerOfI % 4;
    
    // Determine i based on the left over power
    if (remainder == 1)
